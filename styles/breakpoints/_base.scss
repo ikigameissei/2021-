@@ -21,18 +21,34 @@ body {
 }
 .loader {
   position: relative;
+  width: 100%;
   height: 100vh;
+  text-align: center;
+
+  &_wrapper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display:inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+
+  }
+  
 
   span {
     position: absolute;
-    top: 38%;
-    left: 46%;
-    display: inline-block;
+    display:inline-block;
     background-color: #333;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: chartreuse;
+    background-color: rgb(255, 205, 96);
+    
+    
   }
   .load1 {
     animation-name: load1-animation;
@@ -53,26 +69,27 @@ body {
   0% {
     transform: scale(1);
     opacity: 1;
-    background-color: chartreuse;
+    background-color: rgb(255, 205, 96);
+    
   }
 
   100% {
     transform: scale(0);
     opacity: 0;
-    background-color: rgb(87, 157, 17);
+    background-color: rgb(253, 182, 28);
   }
 }
 @keyframes load2-animation {
   0% {
     transform: scale(0);
     opacity: 0;
-    background-color: chartreuse;
+    background-color: rgb(253, 182, 28);
   }
 
   100% {
     transform: scale(1);
     opacity: 1;
-    background-color: rgb(86, 157, 15);
+    background-color: rgb(255, 205, 96);
   }
 }
 .hidden {
