@@ -5,7 +5,7 @@ window.onload = function () {
     const loading = document.querySelector(".loader");
 
     loading.classList.add("hidden");
-  });
+  }, 3000);
 };
 onload();
 
